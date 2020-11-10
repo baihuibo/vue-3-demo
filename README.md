@@ -5,7 +5,7 @@ Vue3 异步组件和普通组件使用相同的静态图片资源时引发的错
 
 访问页面，会出现异常 `TypeError: Cannot add property __props, object is not extensible`
 
-下面一个简单的安装，使用 http-server 模拟即可复现
+下面一个简单的安装，使用 `http-server` 模拟即可复现
 
 复现步骤
 ----
@@ -15,7 +15,7 @@ $ npm install
 $ npm run build
 $
 $ cd ./dist
-$ hs
+$ hs or http-server
 ```
 打开浏览器访问 http://localhost:3000/
 
@@ -24,3 +24,11 @@ $ hs
 预期出现 `assess.vue` 、`layout.vue` 渲染出两张图片
 
 结果控制台报错：`TypeError: Cannot add property __props, object is not extensible`
+
+system
+```
+@vue/compiler-sfc : 3.0.2
+vue : 3.0.2
+vite : 1.0.0-rc.9
+vue-router : 4.0.0-rc.2
+```
