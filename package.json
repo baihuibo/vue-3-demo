@@ -1,0 +1,16 @@
+{
+    "name": "bdir-web",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.0.0",
+        "crequire": "^1.8.1",
+        "less": "^3.12.2",
+        "vite": "^1.0.0-rc.9",
+        "vue": "^3.0.0",
+        "vue-router": "^4.0.0-rc.2"
+    }
+}
